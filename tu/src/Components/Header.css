@@ -1,0 +1,20 @@
+.headerConteiner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.headerContent {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b07eec;
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: center;
+}
