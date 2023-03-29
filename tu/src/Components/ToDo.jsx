@@ -1,3 +1,4 @@
+import { ImBin } from "react-icons/im";
 import "./ToDo.css";
 const ToDo = (props) => {
   return (
@@ -15,7 +16,7 @@ const ToDo = (props) => {
 
             <div className="rightToDoPart">
               <div className="dateToDoes">{item.date.toDateString()}</div>
-              <div className="bin"></div>
+              <ImBin />
             </div>
           </div>
         </div>
