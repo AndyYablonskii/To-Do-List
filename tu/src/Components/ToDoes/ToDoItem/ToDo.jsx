@@ -15,7 +15,7 @@ const ToDo = (props) => {
             </div>
 
             <div className="rightToDoPart">
-              <div className="dateToDoes">{item.date.toDateString()}</div>
+              {/* <div className="dateToDoes">{item.date.toDateString()}</div> */}
               <ImBin />
             </div>
           </div>

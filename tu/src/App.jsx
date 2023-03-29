@@ -1,12 +1,14 @@
 import "./App.css";
-import Header from "./Components/Header";
-import ToDoes from "./Components/ToDoes";
+import Header from "./Components/UI/Header/Header";
+import ToDoesList from "./Components/ToDoes/ToDoesList/ToDoesList";
+import Input from "./Components/UI/Input/Input";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ToDoes />
+      <Input />
+      <ToDoesList />
     </div>
   );
 }

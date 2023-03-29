@@ -1,12 +1,12 @@
-import "./ToDoes.css";
-import ToDo from "./ToDo";
+import "./ToDoesList.css";
+import ToDo from "../ToDoItem/ToDo";
 
-const ToDoes = (props) => {
+const ToDoesList = (props) => {
   const ToDoes = [
     {
       name: "groceries",
       description: "go to the markert and buy milk",
-      date: new Date("2023.02.03"),
+      // date: new Date("2023.02.03"),
       status: true,
       id: 1,
     },
@@ -19,4 +19,4 @@ const ToDoes = (props) => {
   );
 };
 
-export default ToDoes;
+export default ToDoesList;

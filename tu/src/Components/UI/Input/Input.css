@@ -1,0 +1,62 @@
+.inputConteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid;
+}
+
+
+.topInputs {
+  display: flex;
+  flex-direction: row;
+  max-width: 440px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+input:focus{
+    /* border-color: #2f0046;  */
+    /* border: 3px solid #555; */
+    
+      
+}
+
+.TaskNameInput {
+  width: 200px;
+  height: 30px;
+  border-radius: 12px;
+  border: 3px solid #9455f4;
+  background: transparent;
+}
+
+.TaskDescriptionInput {
+  width: 200px;
+  height: 30px;
+  border-radius: 12px;
+  border: 3px solid #9455f4;
+  background: transparent;
+}
+
+.bottomInputs {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .TaskDateInput {
+} */
+
+.AddButton {
+  width: 120px;
+  height: 35px;
+  border-radius: 12px;
+  border: none;
+  background: #b07eec;
+  color:white ;
+}
+/* .AddButton:hover{
+    border-color: #fff 4px solid ;
+} */
