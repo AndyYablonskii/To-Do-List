@@ -1,4 +1,4 @@
-/* .ToDoesConteiner{
-    background: white;
-
-} */
+.ToDoesConteiner {
+  display: flex;
+  flex-direction: column;
+}

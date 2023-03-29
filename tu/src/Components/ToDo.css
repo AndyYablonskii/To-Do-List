@@ -1,20 +1,20 @@
-
-.ToDoConteiner{
-    display: flex;
-    justify-content: center;
+.ToDoConteiner {
+  display: flex;
+  justify-content: center;
 }
 .ToDo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    margin: 30px 60px 30px 60px;
-    padding: 10px 20px 10px 20px;
-    background-color: white;
-    border-radius: 25px;
-    min-width: 360px;
-    width: 360px;
-    height: 100%;
+  margin-top: 20px;
+  /* margin: 30px 60px 30px 60px; */
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border-radius: 25px;
+  min-width: 360px;
+  width: 360px;
+  height: 100%;
 }
 
 .leftToDoPart {
@@ -22,20 +22,25 @@
   flex-direction: column;
 }
 
-.rightToDoPart{
-    display: flex;
-    align-items: center;
+.toDoNameWCheckbox {
+  display: flex;
+  gap: 10px;
 }
 
-.toDoNameWRadio{
-    display: flex;
-    flex-direction: row;
+.rightToDoPart {
+  display: flex;
+  align-items: center;
 }
 
-.description{
-    width: 230px;
+.toDoNameWRadio {
+  display: flex;
+  flex-direction: row;
 }
 
-.dateToDoes{
-    color: purple;
+.description {
+  width: 230px;
+}
+
+.dateToDoes {
+  color: purple;
 }

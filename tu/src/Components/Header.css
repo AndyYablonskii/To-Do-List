@@ -1,8 +1,8 @@
 .headerConteiner {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-
 }
 .headerContent {
   color: white;
@@ -14,9 +14,4 @@
   width: 400px;
   height: 40px;
   border-radius: 15px;
-}
-
-.headerContent {
-  display: flex;
-  justify-content: center;
 }
