@@ -9,6 +9,10 @@ input {
   border: 1px solid;
 }
 
+input:focus{
+  outline: none;
+  border: #593392 3px solid;
+}
 
 .topInputs {
   display: flex;
@@ -18,14 +22,7 @@ input {
   gap: 20px;
 }
 
-input:focus{
-    /* border-color: #2f0046;  */
-    /* border: 3px solid #555; */
-    
-      
-}
-
-.TaskNameInput {
+.TaskNameTask {
   width: 200px;
   height: 30px;
   border-radius: 12px;
@@ -33,7 +30,7 @@ input:focus{
   background: transparent;
 }
 
-.TaskDescriptionInput {
+.TaskDescriptionTask {
   width: 200px;
   height: 30px;
   border-radius: 12px;
@@ -50,8 +47,8 @@ input:focus{
 } */
 
 .AddButton {
-  width: 120px;
-  height: 35px;
+  width: 130px;
+  height: 37px;
   border-radius: 12px;
   border: none;
   background: #b07eec;

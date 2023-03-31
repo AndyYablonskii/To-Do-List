@@ -1,20 +1,28 @@
 import "./ToDoesList.css";
 import ToDo from "../ToDoItem/ToDo";
+import { useState } from "react";
 
 const ToDoesList = (props) => {
-  const ToDoes = [
-    {
-      name: "groceries",
-      description: "go to the markert and buy milk",
-      // date: new Date("2023.02.03"),
-      status: true,
-      id: 1,
-    },
-  ];
+  // const [ToDoes, setToDoes] = useState([
+  //   {
+  //     name: "groceries",
+  //     description: "go to the markert and buy milk",
+  //     status: true,
+  //     id: "test",
+  //   },
+  // ]);
+
+  // const newToDo = {
+  //   name: props.name,
+  //   description: props.description,
+  //   status: false,
+  //   id: Math.random(),
+  // };
+
 
   return (
     <div className="ToDoesConteiner">
-      <ToDo ToDoes={ToDoes} />
+      <ToDo ToDoes={props.ToDoes} />
     </div>
   );
 };

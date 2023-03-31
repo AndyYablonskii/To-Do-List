@@ -1,28 +1,41 @@
+import { useState } from "react";
 import "./Input.css";
 
-const Input = () => {
+const Input = (props, { ToDoes, setToDoes, newTodo }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.setToDoes(props.ToDoes.push(props.newTodo));
+  };
+
   return (
     <div className="inputConteiner">
-      <div className="topInputs">
-        <input
-          type="text"
-          className="TaskNameInput"
-          placeholder="name ur task"
-          id=""
-          required
-          tabIndex={1}
-        />
-        <input
-          type="text"
-          className="TaskDescriptionInput"
-          placeholder="dscribe ur task"
-          id=""
-          tabIndex={2}
-        />
-      </div>
+      <form>
+        <div className="topInputs">
+          <input
+            type="text"
+            className="TaskNameTask"
+            placeholder="name ur task"
+            id=""
+            required
+            tabIndex={1}
+            value={props.nameTask}
+            onChange={(e) => props.setNameTask(e.target.value)}
+          />
+          <input
+            type="text"
+            className="TaskDescriptionTask"
+            placeholder="dscribe ur task"
+            id=""
+            tabIndex={2}
+            value={props.descriptionTask}
+            onChange={(e) => props.setDescriptionTask(e.target.value)}
+          />
+        </div>
+      </form>
       <div className="bottomInputs">
-        {/* <input type="date" className="TaskDateInput" id="" tabIndex{3} /> */}
-        <input type="button" value="submit ur task" className="AddButton" tabIndex={3} />
+        <button className="AddButton" tabIndex={3} onClick={handleSubmit}>
+          submit ur task
+        </button>
       </div>
     </div>
   );

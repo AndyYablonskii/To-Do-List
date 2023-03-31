@@ -22,6 +22,7 @@
   flex-direction: column;
 }
 
+
 .toDoNameWCheckbox {
   display: flex;
   gap: 10px;
@@ -32,6 +33,10 @@
   align-items: center;
   gap: 20px;
   
+}
+
+.name{
+  margin-bottom: 5px;
 }
 
 .toDoNameWRadio {
